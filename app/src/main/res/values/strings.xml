@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name"> Get Coffee</string>
+    <string name="name">Name</string>
+    <string name="toppings">TOPPINGS</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="quantity">QUANTITY</string>
+    <string name="_1">1</string>
+    <string name="order">ORDER</string>
+    <string name="name1">\Name: \</string>
+    <string name="quantity1">\Quantity: \</string>
+    <string name="add_whipped_cream">\Add Whipped Cream? \</string>
+    <string name="add_chocolate">\Add Chocolate? \</string>
+    <string name="Total">Total: </string>
+</resources>

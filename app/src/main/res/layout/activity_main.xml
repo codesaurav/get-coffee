@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/appTheme">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:textSize="16sp"
+            android:layout_margin="16dp"
+            android:inputType="text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/toppings"
+            style="@style/textDesign1"
+            android:text="@string/toppings"
+            android:textSize="18sp"
+            android:layout_margin="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWhippedCream"
+            style="@style/textDesign2"
+            android:text="@string/whipped_cream"
+            android:textSize="16sp"
+            android:paddingLeft="24dp"
+            android:layout_margin="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toppings" />
+
+        <CheckBox
+            android:id="@+id/checkBoxChocolate"
+            style="@style/textDesign2"
+            android:text="@string/chocolate"
+            android:textSize="16sp"
+            android:paddingLeft="24dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBoxWhippedCream" />
+
+        <TextView
+            android:id="@+id/quantity"
+            style="@style/textDesign1"
+            android:text="@string/quantity"
+            android:layout_margin="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBoxChocolate" />
+
+        <Button
+            android:id="@+id/increment"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:onClick="increment"
+            android:text="+"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quantity"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            style="@style/metrics"
+            android:layout_margin="24dp"
+            android:text="@string/_1"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/quantity"
+            app:layout_constraintLeft_toRightOf="@id/increment"
+             />
+
+
+        <Button
+            android:id="@+id/decrement"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:onClick="decrement"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/quantity_text_view"
+            app:layout_constraintTop_toBottomOf="@id/quantity"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/order"
+            style="@style/metrics"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:onClick="submitOrder"
+            android:text="@string/order"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/increment"
+            tools:ignore="MissingConstraints" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
