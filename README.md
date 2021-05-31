@@ -1,4 +1,4 @@
-# getCoffeeApp
+# Get Coffee Application
 
 The name of the app is Get Coffee.
 This app can order coffee by sending an email.
